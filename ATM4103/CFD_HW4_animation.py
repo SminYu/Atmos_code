@@ -85,4 +85,6 @@ def update(i):
     
 ani = FuncAnimation(fig, update,  frames=200, interval=50)
 HTML(ani.to_html5_video())
+ani.save('sin_plus_cos.gif', writer='imagemagick')
+
         
